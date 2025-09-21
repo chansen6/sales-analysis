@@ -19,9 +19,6 @@ cd sales-analysis
 - Install dependencies
 pip install -r requirements.txt
 
-# Run project
-python main.py
-
 
 ## Example Output
 - Total: 12000
