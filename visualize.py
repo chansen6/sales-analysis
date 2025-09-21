@@ -11,7 +11,7 @@ def plot_sales(df):
     plt.tight_layout()
     plt.show()
 
-    plt.savefig("reports/revenue_distribution.png")
+    plt.savefig("data/revenue_distribution.png")
 
     plt.figure(figsize=(10,6))
     df.groupby('Item Type')['Total Profit'].sum().plot(kind='bar')
@@ -23,4 +23,5 @@ def plot_sales(df):
 
     plt.savefig("data/profit_by_product.png")
    
+
 
