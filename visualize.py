@@ -1,14 +1,25 @@
 import matplotlib.pyplot as plt
 
 def plot_sales(df):
-    """Plot sales over time if Date column exists"""
-    if "Date" not in df.columns or "Sales" not in df.columns:
-        print("⚠️ Cannot plot: missing Date or Sales column")
-        return
 
-    df.plot(x="Date", y="Sales", kind="line", marker="o", title="Sales Over Time")
-    plt.xlabel("Date")
-    plt.ylabel("Sales")
-    plt.grid(True)
+
+    plt.figure(figsize=(10,6))
+    df.groupby('Region')['Total Revenue'].sum().plot(kind='bar')
+    plt.title('Total Revenue by Region')
+    plt.ylabel('Total Revenue ($)')
+    plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
+
+    plt.savefig("reports/revenue_distribution.png")
+
+    plt.figure(figsize=(10,6))
+    df.groupby('Item Type')['Total Profit'].sum().plot(kind='bar')
+    plt.title('Profit by Product Type')
+    plt.ylabel('Total Profit ($)')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+
+    plt.savefig("reports/profit_by_product.png")
+   
