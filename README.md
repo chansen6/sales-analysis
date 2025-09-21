@@ -24,9 +24,9 @@ python main.py
 
 
 ## Example Output
-Total: 12000
-Average: 400
-Highest: 900
-Lowest: 100
-Variance: 65234.5
-Standard Deviation: 255.4
+- Total: 12000
+- Average: 400
+- Highest: 900
+- Lowest: 100
+- Variance: 65234.5
+- Standard Deviation: 255.4
