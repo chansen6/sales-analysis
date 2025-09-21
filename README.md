@@ -12,11 +12,11 @@ It covers the full workflow used in data science:
 
 
 # How to Run
-# Clone repo
+- Clone repo
 git clone https://github.com/yourusername/sales-analysis.git
 cd sales-analysis
 
-# Install dependencies
+- Install dependencies
 pip install -r requirements.txt
 
 # Run project
