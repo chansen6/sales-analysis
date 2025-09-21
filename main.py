@@ -1,6 +1,6 @@
-from sales_analysis.loader import load_sales_data, export_report
-from sales_analysis.stats import calculate_stats
-from sales_analysis.visualize import plot_sales
+from loader import load_sales_data, export_report
+from stats import calculate_stats
+from visualize import plot_sales
 
 def main():
     data = load_sales_data("data/sales_data.csv")
@@ -11,3 +11,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
