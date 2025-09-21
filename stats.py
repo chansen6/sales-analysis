@@ -1,8 +1,8 @@
-import numpy as np
-
 def calculate_stats(df):
     """Calculate summary statistics from sales data"""
-    sales = df["Sales"]  # assumes your CSV has a "Sales" column
+
+    # pick the column you want to analyze
+    sales = df["Total Revenue"]
 
     total = sales.sum()
     avg = sales.mean()
@@ -12,10 +12,10 @@ def calculate_stats(df):
     std_dev = round(sales.std(), 2)
 
     return {
-        "Total Sales": total,
-        "Average Sale": round(avg, 2),
-        "Highest Sale": high,
-        "Lowest Sale": low,
+        "Total Revenue": total,
+        "Average Revenue": round(avg, 2),
+        "Highest Revenue": high,
+        "Lowest Revenue": low,
         "Variance": variance,
         "Standard Deviation": std_dev
     }
