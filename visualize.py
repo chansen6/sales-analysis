@@ -21,5 +21,6 @@ def plot_sales(df):
     plt.tight_layout()
     plt.show()
 
-    plt.savefig("reports/profit_by_product.png")
+    plt.savefig("data/profit_by_product.png")
    
+
